@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Travel Adventures</title>
+<style>
+/* 1. Styling a Page Header */
+h1 {
+  color: red;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+/* 2. Creating a Highlight Class */
+.highlight {
+  font-weight: bold;
+  background-color: yellow;
+  font-size: 20px;
+}
+
+/* 3. Box Model Practice */
+.box {
+  margin: 20px;
+  padding: 10px;
+  border: 2px solid black;
+}
+
+/* 4. Responsive Design */
+@media (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+}
+
+/* 5. Background Image (Beach Banner) */
+.banner {
+  background-image: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e'); /* Beach photo */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 250px;
+  width: 100%;
+  border-radius: 10px;
+  margin: 20px 0;
+}
+
+/* 6. Transition Effect on Button */
+button {
+  background-color: blue;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.5s;
+  cursor: pointer;
+}
+button:hover {
+  background-color: green;
+}
+
+/* 7. Absolute vs Relative Positioning */
+.relative-box {
+  position: relative;
+  width: 250px;
+  height: 120px;
+  background-color: lightgray;
+  margin: 20px;
+  border-radius: 8px;
+  padding: 10px;
+}
+.absolute-box {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  width: 100px;
+  height: 50px;
+  background-color: orange;
+  border-radius: 6px;
+  text-align: center;
+  line-height: 50px;
+  font-weight: bold;
+}
+
+/* 8. Using Different CSS Units */
+.font-example p {
+  margin: 5px 0;
+}
+.font-px {
+  font-size: 16px;
+}
+.font-em {
+  font-size: 1.5em;
+}
+.font-rem {
+  font-size: 1.5rem;
+}
+.parent {
+  font-size: 20px;
+  border: 1px dashed gray;
+  padding: 10px;
+}
+
+/* 9. Flexbox Layout */
+.flex-container {
+  display: flex;
+  gap: 10px;
+  margin: 20px;
+}
+.flex-item {
+  flex: 1;
+  background-color: #f2f2f2;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* 10. Color Formats */
+.color-rgb {
+  color: rgb(255, 0, 0);
+}
+.color-hex {
+  color: #00ff00;
+}
+.color-hsl {
+  color: hsl(240, 100%, 50%);
+}
+</style>
+</head>
+<body>
+
+<!-- 1. Header -->
+<h1>Travel Adventures</h1>
+
+<!-- 2. Highlighted Paragraph -->
+<p class="highlight">Discover the world’s most beautiful beaches and breathtaking destinations!</p>
+
+<!-- 3. Box Model Section -->
+<div class="box">Travel brings joy, relaxation, and inspiration — explore new places, cultures, and cuisines!</div>
+
+<!-- 5. Beach Banner -->
+<div class="banner"></div>
+
+<!-- 6. Transition Button -->
+<p style="text-align:center;">
+  <button>Start Your Journey</button>
+</p>
+
+<!-- 7. Positioning Example -->
+<div class="relative-box">
+  Relative Box
+  <div class="absolute-box">Absolute Box</div>
+</div>
+
+<!-- 8. CSS Units Example -->
+<div class="parent">
+  <h3>Font Size Comparison</h3>
+  <div class="font-example">
+    <p class="font-px">This text uses 16px.</p>
+    <p class="font-em">This text uses 1.5em (relative to parent).</p>
+    <p class="font-rem">This text uses 1.5rem (relative to root).</p>
+  </div>
+</div>
+
+<!-- 9. Flexbox Layout Example -->
+<section class="flex-container">
+  <div class="flex-item">
+    <h3>Beach Holidays</h3>
+    <p>Relax on the sandy shores and enjoy the sound of waves.</p>
+  </div>
+  <div class="flex-item">
+    <h3>Mountain Adventures</h3>
+    <p>Hike through breathtaking trails and scenic landscapes.</p>
+  </div>
+</section>
+
+<!-- 10. Color Formats Example -->
+<p class="color-rgb">This paragraph uses RGB color (red).</p>
+<p class="color-hex">This paragraph uses HEX color (green).</p>
+<p class="color-hsl">This paragraph uses HSL color (blue).</p>
+
+</body>
+</html>
